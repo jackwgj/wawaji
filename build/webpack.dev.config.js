@@ -32,7 +32,7 @@ let webpackConfig = module.exports = {
 Object.keys(webpackConfig.entry).forEach(function(name) {
     webpackConfig.entry[name] = ['webpack/hot/dev-server', 'webpack-hot-middleware/client'].concat(webpackConfig.entry[name]);
 });
-let port = 8080;
+let port = 8090;
 let host = 'localhost';
 let uri = 'http://' + host + ':' + port;
 let autoOpenBrowser = true;

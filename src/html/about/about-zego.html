@@ -2,93 +2,13 @@
 <html>
 
 <head>
-    <!-- 公共meta -->
-    ${require("html-loader!../../components/meta/common_meta.html")}
-    
-    <!-- 通用css模块 -->
-    ${require("html-loader!../../components/assets/commoncss.html")}
 
     <title>了解即构 - 即构科技</title>
 </head>
 
 <body class="none">
     <div id="app">
-        <!-- 顶部导航 -->
-        ${require("html-loader!../../components/header/header.html")}
-
-        <!-- banner -->
-        <div class="know-banner z-wrapper">
-            <h1 class="title pc">一家聚集音视频通讯领域顶尖人才的公司</h1>
-            <h1 class="title m">一家聚集音视频<br>通讯领域顶尖人才的公司</h1>
-            <p class="pc">由QQ前总经理林友尧和4位资深腾讯总监创立。20名来自腾讯的核心技术专家，均有超过10年经验积累。<br>多位成员在QQ从百万级到亿级在线的技术突破中奋斗成长，为腾讯从无到有开拓了大量增值服务。 <br>团队拥有16年语音视频技术积累，曾为腾讯打造出世界顶级的实时通信产品和服务。 <br>自研语音视频引擎，在语音前处理、网络自适应和跨平台兼容性等方面，达到国际顶尖水平。 <br>致力于提供全球最清晰稳定的实时语音视频云服务，帮助企业快速获得实时通讯能力。 <br>配合差异化咨询服务和VIP式技术支持，实现客户需求。为一百多个国家和地区的用户提供优质服务。<br>赢得社交、游戏、直播、金融、教育、医疗、呼叫中心和智能硬件等领域大量头部客户的信赖。</p>
-            <p class="m">由QQ前总经理林友尧和4位资深腾讯总监创立。20名来自腾讯的核心技术专家，均有超过10年经验积累。多位成员在QQ从百万级到亿级在线的技术突破中奋斗成长，为腾讯从无到有开拓了大量增值服务。<br> 团队拥有16年语音视频技术积累，曾为腾讯打造出世界顶级的实时通信产品和服务。自研语音视频引擎，在语音前处理、网络自适应和跨平台兼容性等方面，达到国际顶尖水平。<br>致力于提供全球最清晰稳定的实时语音视频云服务，帮助企业快速获得实时通讯能力。配合差异化咨询服务和VIP式技术支持，实现客户需求。为一百多个国家和地区的用户提供优质服务。赢得社交、游戏、直播、金融、教育、医疗、呼叫中心和智能硬件等领域大量头部客户的信赖。</p>
-        </div>
-
-        <!-- team -->
-        <div class="team-member">
-            <h1 class="title">创始团队</h1>
-            <div class="container">
-                <div class="hd clearfix">
-                    <div class="img-wrapper">
-                        <img class="lg-img show" style="background-image:url(${require('../../static/images/about/lyy1.png')});" alt="">
-                        <img class="lg-img" style="background-image:url(${require('../../static/images/about/james1.png')});" alt="">
-                        <img class="lg-img" style="background-image:url(${require('../../static/images/about/gavin1.png')});" alt="">
-                        <img class="lg-img" style="background-image:url(${require('../../static/images/about/kuk1.png')});" alt="">
-                        <img class="lg-img" style="background-image:url(${require('../../static/images/about/bryan1.png')});" alt="">
-                    </div>
-                    <div class="team-details">
-                        <div class="swiper-container team-swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <h2>林友尧 LYY</h2>
-                                    <h3>首席执行官 CEO</h3>
-                                    <p>曾担任腾讯QQ即通部门总经理。<br>2002年到2015年，服务腾讯13年。腾讯143号员工，第一位客户端T4技术<br>专家，QQ Hummer的整体架构师。<br>曾带领团队两度获得腾讯研发金奖（腾讯技术最高奖项）。<br>2015年创建即构科技，致力于构建海量有序数据网络，升级云计算平台，<br>让企业快速而便捷的获得IM云和语音视频云等应用型云服务。</p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h2>金健忠 James Jin</h2>
-                                    <h3>首席技术官 CTO</h3>
-                                    <p>曾任腾讯即通部门开发主管。2010年至2015年服务腾讯。<br>曾从零起步组建QQ语音团队，研发出国内第一的语音视频引擎，用于<br>QTalk、QQ PC版和QQ手机版。<br>在语音视频终端引擎等领域的研发有超过十六年的经验。<br>2015年联合创建即构科技。</p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h2>蔡耿平 Gavin Cai</h2>
-                                    <h3>后台技术负责人</h3>
-                                    <p>曾为Winphone QQ团队负责人。2005年至2015年服务腾讯。<br>曾长期负责QQ底层平台建设，和QQ音视频后台技术建设。在语音视频云<br>后台海量用户高并发领域的研发和运营有超过10年经验。<br>2015年联合创建即构科技。</p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h2>蒋宁波 Kuk Jiang</h2>
-                                    <h3>前台技术负责人</h3>
-                                    <p>曾任腾讯即通部门开发主管。2005年至2015年服务腾讯。<br>曾长期从事QQ底层平台建设，负责QQ多端跨平台安全技术和QQ表情的<br>研发。在语音视频技术全终端跨平台领域的研发有超过10年经验。<br>2015年联合创建即构科技。</p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <h2>陈强 Bryan Chen</h2>
-                                    <h3>商务负责人</h3>
-                                    <p>曾任腾讯即通部门商务拓展主管。2011年至2015年服务腾讯。<br>曾负责QQ产品技术团队与产业生态合作伙伴（ARM、微软&Intel等）的<br>战略合作。在互联网商务合作和机构销售等方面有超过十五年的经验。<br>2015年联合创建即构科技。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="arrow-left "></div>
-                        <div class="arrow-right"></div>
-                    </div>
-                </div>
-                <ul class="bd clearfix main-member">
-                    <li class="member-li"><img src="${require('../../static/images/about/lyy2.png')}" alt=""></li>
-                    <li class="member-li"><img src="${require('../../static/images/about/james2.png')}" alt=""></li>
-                    <li class="member-li"><img src="${require('../../static/images/about/gavin2.png')}" alt=""></li>
-                    <li class="member-li"><img src="${require('../../static/images/about/kuk2.png')}" alt=""></li>
-                    <li class="member-li"><img src="${require('../../static/images/about/bryan2.png')}" alt=""></li>
-                </ul>
-            </div>
-        </div>
-
-
-        <!-- 底部 -->
-        ${require("html-loader!../../components/footer/footer.html")}
     </div>
-    <!-- 申请试用 -->
-    ${require("html-loader!../../components/apply/apply.html")}
-
-    <!-- 通用js模块 -->
-    ${require("html-loader!../../components/assets/commonjs.html")}
     
     <!-- built files will be auto injected -->
 </body>
