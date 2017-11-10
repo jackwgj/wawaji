@@ -1,0 +1,54 @@
+/* 了解即构 */
+
+.know-banner {
+    height: 500px;
+    background: url('../../static/images/about/know-bac.png') center no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    .title {
+        &.m {
+            display: none;
+        }
+        margin-bottom: 20px;
+        padding-top: 140px;
+        font-size: 32px;
+    }
+    p {
+        &.m {
+            display: none;
+        }
+        font-size: 16px;
+        line-height: 29px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .know-banner {
+        height: auto;
+        .title {
+            &.pc {
+                display: none;
+            }
+            &.m {
+                display: block;
+            }
+            margin-bottom: .5rem;
+            padding-top: 1.98rem;
+            font-size: .48rem;
+            line-height: 0.66rem;
+        }
+        p {
+            &.pc {
+                display: none;
+            }
+            &.m {
+                display: block;
+            }
+            padding: 0 .35rem .91rem;
+            font-size: .28rem;
+            line-height: 0.46rem;
+            text-align: left;
+        }
+    }
+}

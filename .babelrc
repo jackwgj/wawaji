@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "env", { 
+        "targets": { 
+          "browsers": ["Firefox >= 10", "ie >= 8", "chrome  >= 10", "safari  >= 10"]
+        },
+        "modules": false, 
+        "useBuiltIns": false, 
+        "debug": false 
+      }
+    ],
+    "stage-2"
+  ],
+  "plugins": [],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [ "istanbul" ]
+    }
+  }
+}
