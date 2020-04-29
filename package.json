@@ -38,7 +38,7 @@
     "http-proxy-middleware": "^0.17.4",
     "http-server": "^0.10.0",
     "imagemin-webpack-plugin": "^1.4.4",
-    "jquery": "^1.11.3",
+    "jquery": "^3.5.0",
     "localtunnel": "^1.8.3",
     "markdown-pdf-marked": "^1.0.8",
     "node-sass": "^4.5.2",
@@ -61,6 +61,6 @@
     "webpack-merge": "^4.1.0"
   },
   "dependencies": {
-    "jquery": "^1.11.3"
+    "jquery": "^3.5.0"
   }
 }
